@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6b1f2b">
+  <meta name="description" content="Invitación de boda de Iván y Javiera — 9 de enero de 2027.">
+  <title>Iván & Javiera · 09.01.2027</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="welcome" class="welcome">
+    <div class="welcome-photo"></div>
+    <div class="welcome-content">
+      <p class="eyebrow">Bienvenidos a la invitación de</p>
+      <h1>Iván <span>&amp;</span> Javiera</h1>
+      <p class="welcome-date">09 · 01 · 2027</p>
+      <p class="welcome-note">La música de fondo es parte de la experiencia.</p>
+      <button id="enterBtn" class="btn btn-light">Ingresar a la invitación</button>
+      <button id="silentBtn" class="text-btn">Ingresar sin música</button>
+    </div>
+  </div>
+
+  <main id="invitation" class="hidden">
+    <section class="hero">
+      <img src="img/portada.jpg" alt="Iván y Javiera" class="hero-image">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Nuestra boda</p>
+        <h1>Iván <span>&amp;</span> Javiera</h1>
+        <p class="hero-date">09.01.2027</p>
+        <a href="#countdown" class="scroll-hint">Descubrir <span>↓</span></a>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <p class="eyebrow">Un día para recordar</p>
+      <h2>Hay momentos que merecen ser compartidos.</h2>
+      <p>Queremos celebrar este nuevo capítulo junto a las personas que queremos.</p>
+    </section>
+
+    <section id="countdown" class="countdown section dark">
+      <p class="eyebrow">Falta poco</p>
+      <div class="count-grid">
+        <div><strong id="days">00</strong><span>días</span></div>
+        <div><strong id="hours">00</strong><span>horas</span></div>
+        <div><strong id="minutes">00</strong><span>min</span></div>
+        <div><strong id="seconds">00</strong><span>seg</span></div>
+      </div>
+    </section>
+
+    <section class="event section">
+      <p class="eyebrow">El gran día</p>
+      <h2>Ceremonia</h2>
+      <p class="event-time">Sábado 9 de enero · 16:00 hrs.</p>
+      <p class="event-place">Catedral Osorno</p>
+      <p class="event-address">Manuel Antonio Matta 662, Osorno</p>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Catedral%20San%20Mateo%20Osorno" target="_blank" rel="noopener">Cómo llegar</a>
+        <button class="btn btn-outline" data-calendar="ceremony">Agendar</button>
+      </div>
+    </section>
+
+    <section class="event section alt">
+      <p class="eyebrow">Después de la ceremonia</p>
+      <h2>Celebración</h2>
+      <p class="event-time">Sábado 9 de enero · 19:00 hrs.</p>
+      <p class="event-place">Club Pesca y Caza Paillaco</p>
+      <p class="event-address">T-65 km 1.6, Paillaco</p>
+      <div class="actions">
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Club%20Pesca%20y%20Caza%20Paillaco" target="_blank" rel="noopener">Cómo llegar</a>
+        <button class="btn btn-outline" data-calendar="party">Agendar</button>
+      </div>
+    </section>
+
+    <section class="gallery section">
+      <p class="eyebrow">Retratos de nuestro amor</p>
+      <h2>Un instante que queda en la eternidad.</h2>
+      <div class="gallery-grid">
+        <img src="img/01.jpg" alt="Iván y Javiera juntos">
+        <img src="img/02.jpg" alt="Iván y Javiera en el parque">
+        <img src="img/03.jpg" alt="Iván y Javiera juntos">
+        <img src="img/04.jpg" alt="Iván y Javiera sonriendo">
+      </div>
+    </section>
+
+    <section class="feature section dark">
+      <p class="eyebrow">Confirmar asistencia</p>
+      <h2>Nos encantará contar contigo.</h2>
+      <p>Es importante que confirmes tu asistencia para poder preparar este día especial.</p>
+      <a class="btn btn-light" href="#confirmar">Confirmar asistencia</a>
+    </section>
+
+    <section id="confirmar" class="info section">
+      <p class="eyebrow">Confirmación</p>
+      <h2>Confirma tu asistencia</h2>
+      <p>Completa tus datos para que podamos contar contigo.</p>
+
+      <div class="info-card menu-card" style="margin-top:34px">
+        <span>Menú del matrimonio</span>
+        <strong>Coctelería de entrada</strong>
+        <p class="menu-note">Para todos los invitados.</p>
+        <hr>
+        <strong>Plato de fondo</strong>
+        <ul>
+          <li>Opción 1: Carne mechada</li>
+          <li>Opción 2: Salmón</li>
+        </ul>
+        <strong>Guarnición a elegir</strong>
+        <ul>
+          <li>Opción 1: Arroz</li>
+          <li>Opción 2: Papas doradas</li>
+          <li>Opción 3: Puré</li>
+        </ul>
+        <p class="menu-note">Elige tu menú en el formulario de confirmación.</p>
+      </div>
+
+      <form id="rsvpForm" class="guest-form">
+        <label>Nombre y apellido
+          <input name="name" type="text" placeholder="Tu nombre completo" required>
+        </label>
+        <label>¿Asistirás?
+          <select name="attendance" required>
+            <option value="">Selecciona una opción</option>
+            <option value="Sí, asistiré">Sí, asistiré</option>
+            <option value="No podré asistir">No podré asistir</option>
+          </select>
+        </label>
+        <label>¿Cuántas personas asistirán?
+          <select name="guests" required>
+            <option value="">Selecciona</option>
+            <option>1</option>
+          </select>
+        </label>
+        <div id="menuChoices" class="menu-choices"></div>
+        <label>Restricciones alimentarias o comentarios
+          <textarea name="notes" rows="4" placeholder="Opcional"></textarea>
+        </label>
+        <button class="btn btn-light" type="submit">Enviar confirmación</button>
+      </form>
+      <div class="info-card" style="margin-top:45px">
+        <span>Dress Code</span>
+        <strong>Elegante Formal</strong>
+      </div>
+      <div class="info-card">
+        <span>Tips y notas</span>
+        <strong>Sin niños</strong>
+        <strong>No vestir de color rojo, blanco o burdeo.</strong>
+      </div>
+    </section>
+
+    <section class="music section alt">
+      <p class="eyebrow">Música</p>
+      <h2>¿Qué canción no puede faltar?</h2>
+      <p>Sugiere una canción para que forme parte de la fiesta.</p>
+      <form id="songForm" class="guest-form">
+        <label>Tu nombre
+          <input name="name" type="text" placeholder="Nombre" required>
+        </label>
+        <label>¿Qué canción sugieres?
+          <input name="song" type="text" placeholder="Canción y artista" required>
+        </label>
+        <label>Link (opcional)
+          <input name="link" type="url" placeholder="Spotify, YouTube, etc.">
+        </label>
+        <button class="btn btn-light" type="submit">Sugerir canción</button>
+      </form>
+      <a class="btn btn-outline" href="https://milistadenovios.cl/lista/42057" target="_blank" rel="noopener" style="margin-top:18px">Ver lista de regalos</a>
+    </section>
+
+    <section class="suggestion section">
+      <p class="eyebrow">Regalos</p>
+      <h2>Un regalo para nosotros</h2>
+      <p>un regalo individual.</p>
+       <a class="btn btn-outline" href="https://milistadenovios.cl/lista/42057" target="_blank" rel="noopener" style="margin-top:18px">Ver lista de regalos</a>
+      <form id="giftForm" class="guest-form">
+        <label>Tu nombre
+          <input name="name" type="text" placeholder="Nombre" required>
+        </label>
+        <label>Tu sugerencia
+          <textarea name="gift" rows="5" placeholder="Escribe aquí tu idea de regalo o deseo..." required></textarea>
+        </label>
+        <button class="btn btn-light" type="submit">Enviar sugerencia</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>Iván <span>&amp;</span> Javiera</p>
+      <small>09 · 01 · 2027</small>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" src="audio/iris.mp3" loop preload="auto"></audio>
+  <button id="musicToggle" class="music-toggle hidden" aria-label="Activar o silenciar música">♪</button>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
